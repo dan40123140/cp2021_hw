@@ -1443,7 +1443,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="exam">exam</button></p>
+<p><button id="exam">exam</button><button id="extend1">extend1</button><button id="extend2">extend2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -1528,16 +1528,16 @@ class button2:
 exam_url = "https://gist.githubusercontent.com/dan41023140/eb68725e838f93564d467440ee045e15/raw/f245700a551e9a67e06322a379582bd314b218cb/W13%2520exam"
 exam = button2(exam_url)
 doc["exam"].bind('click', exam.do)
-################################# p261 start 
-p261_url = "https://gist.githubusercontent.com/mdecourse/2f56974a40da7a218dbaef376a5b4ca4/raw/980606effcd29635307d6474718cd4a7ef016747/p261.py"
-p261 = button2(p261_url)
-doc["p261"].bind('click', p261.do)
-################################## p261 end
-################################## rocflag start
-rocflag_url = "https://gist.githubusercontent.com/mdecourse/2f56974a40da7a218dbaef376a5b4ca4/raw/0e2ca81d5c2539c4b6c86071c8cf9de0b1251b9c/roc_flag.py"
-rocflag = button2(rocflag_url)
-doc["rocflag"].bind("click", rocflag.do)
-################################## rocflag end
+################################# extend1 start 
+extend1_url = "https://gist.githubusercontent.com/dan41023140/372b73aa21bb05ec51ce08b541bc779b/raw/037f19ebbf57ef222e835da8471f854a7acf9cbe/W13%2520extend1"
+extend1 = button2(extend1_url)
+doc["extend1"].bind('click', extend1.do)
+################################## extend1 end
+################################## extend2 start
+extend2_url = "https://gist.githubusercontent.com/dan41023140/3a00c6c5ea975bf311375a5e38cd987f/raw/c99ac37a32524d6290a73f0edb572d825c3813f9/W13%2520extend2"
+extend2 = button2(extend2_url)
+doc["extend2"].bind("click", extend2.do)
+################################## extend2 end
 ################################## final1 start
 final1_url = "https://gist.githubusercontent.com/dan41023140/eb769f52deab1c27015f0445bc3df8d2/raw/2dbed5d96858c719f70a35f2ebaec4697caa2dc3/final1"
 final1 = button2(final1_url)

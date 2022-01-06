@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a><li><a href='中英打.html'>中英打</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='W11-1.html'>W11-1</a><li><a href='W12-1.html'>W12-1</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='manual snake.html'>manual snake</a><li><a href='AI snake.html'>AI snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run src.html'>run src</a><li class='has-children'><a href='Final exam.html'>Final exam</a><ul class='dropdown'><li><a href='41023140.html'>41023140</a></li></li></ul></ul><li><a href='EXAM.html'>EXAM</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a><li><a href='中英打.html'>中英打</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='W11-1.html'>W11-1</a><li><a href='W12-1.html'>W12-1</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='manual snake.html'>manual snake</a><li><a href='AI snake.html'>AI snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run src.html'>run src</a><li><a href='Final exam.html'>Final exam</a></li></ul><li><a href='41023140.html'>41023140</a><li><a href='EXAM.html'>EXAM</a></li>
                       </ul>
                 </nav>
               </div>
@@ -178,7 +178,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="exam">exam</button></p>
+<p><button id="exam">exam</button><button id="extend1">extend1</button><button id="extend2">extend2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -194,10 +194,10 @@ function doSave(storage_id, filename){
 <p><!-- 程式執行 ouput 區 --></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
-<!-- 這裡的畫布 id 為 brython_div -->
+<p><!-- 這裡的畫布 id 為 brython_div --></p>
 <div id="brython_div"></div>
 <p><!-- ######################  editor1 結束 ###################### --></p>
-<!-- 以下可以開始利用 editor1 的設定編寫對應 Brython 程式 -->
+<p><!-- 以下可以開始利用 editor1 的設定編寫對應 Brython 程式 -->
 <script type="text/python3">
 from browser import document as doc
 import ace
@@ -235,7 +235,7 @@ doc['clear_bd1'].bind('click', clear_bd1)
 # 呼叫函式執行
 run1()
 </script>
-<!-- 以上為內建程式, 頁面可透過 ?src=gist_url 執行 -->
+<!-- 以上為內建程式, 頁面可透過 ?src=gist_url 執行 --></p>
 <p><!-- add 1 to 100 開始 -->
 <script type="text/python3">
 from browser import document as doc
@@ -263,9 +263,28 @@ class button2:
 exam_url = "https://gist.githubusercontent.com/dan41023140/eb68725e838f93564d467440ee045e15/raw/f245700a551e9a67e06322a379582bd314b218cb/W13%2520exam"
 exam = button2(exam_url)
 doc["exam"].bind('click', exam.do)
+################################# extend1 start 
+extend1_url = "https://gist.githubusercontent.com/dan41023140/372b73aa21bb05ec51ce08b541bc779b/raw/037f19ebbf57ef222e835da8471f854a7acf9cbe/W13%2520extend1"
+extend1 = button2(extend1_url)
+doc["extend1"].bind('click', extend1.do)
+################################## extend1 end
+################################## extend2 start
+extend2_url = "https://gist.githubusercontent.com/dan41023140/3a00c6c5ea975bf311375a5e38cd987f/raw/c99ac37a32524d6290a73f0edb572d825c3813f9/W13%2520extend2"
+extend2 = button2(extend2_url)
+doc["extend2"].bind("click", extend2.do)
+################################## extend2 end
+################################## final1 start
+final1_url = "https://gist.githubusercontent.com/dan41023140/eb769f52deab1c27015f0445bc3df8d2/raw/2dbed5d96858c719f70a35f2ebaec4697caa2dc3/final1"
+final1 = button2(final1_url)
+doc["final1"].bind("click", final1.do)
+################################## final1 end
+################################## final2 start
+final2_url = "https://gist.githubusercontent.com/dan41023140/6719f1c34e7e1f624435edcedd05c97f/raw/bca4f7aae54a83cf46125c8b6bacc4e45f000c27/final2"
+final2 = button2(final2_url)
+doc["final2"].bind("click", final2.do)
+################################## final2 end
 </script>
-</p>
-<p></p><br />41023140 << <a href='41023140.html'>Previous</a> </div>
+</p><br />41023140 << <a href='41023140.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
